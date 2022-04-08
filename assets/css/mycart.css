@@ -1,0 +1,156 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+/* VARIABLES */
+:root {
+  --bg-color: #fff;
+  --bg-danger:#f63440;
+  --link-color: #000;
+  --link-size: 1.1rem;
+  --right-side-bg-color: 81, 187, 254;
+  --text-white:#fff;
+  --bg-whited-nice: #fff;
+  --bg-dangered-nice:#e92e3d;
+  --bg-dangered-passtail:#ff6e6a;
+  --bg-greened-nice:#24e07f;
+  --bg-greened-passtail:#a8ff52;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+html{
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+#bg-body{
+  background:var(--bg-dangered-passtail);
+}
+/* Navbar Start*/
+
+nav{
+  background:var(--bg-dangered-nice);
+}
+nav a.navbar-brand img {
+  height: 50px;
+  background: var(--bg-whited-nice);
+  padding: 5px;
+  border-radius: 5px;
+}
+.navbarcard button,
+.navbarcard button:hover{
+outline: none;
+border: none;
+}
+#header form .navbarcard-count{
+  font-size: 12px;
+}
+/* Navbar End*/
+
+/* Section Cart Add */
+
+.cartadd{
+  border-radius: 7px;
+  padding: 10px;
+background: var(--bg-color);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  display: none;
+}
+
+#cartadd .row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cartadd{
+  width: 35%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* float: right; */
+  padding: 20px;
+  margin-top: 45px;
+  z-index: 1;
+}
+.cartadd{
+  position: sticky;
+  top: 60px;
+  right: 0;
+}
+#cartadd .item-info:hover{
+  cursor: pointer;
+  background:  var(--bg-danger);
+}
+#cartadd .item-info img{
+  width: 50px;
+  height: 50px;
+}
+.show-cart-cartadd{
+  display: block;
+}
+.minus button,
+.plus button{
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+
+
+.mycart{
+    
+     position: relative;
+
+   margin-top: 5rem;
+  
+   /* padding: 20px 30px; */
+   border-radius: 7px;
+ 
+}
+.row-c,
+.buy{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 7px;
+    background-color: white;
+}
+
+.fa-minus-circle,
+.fa-plus-circle{
+   font-size: 2rem; 
+}
+.fa-plus-circle{
+    color: blue;
+}
+.fa-minus-circle{
+    color: #e92e3d;
+}
+.number{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.fa-trash-alt{
+    position: absolute;
+margin-top: 30px;
+  right: 10px;
+    color: red;
+font-size: 3rem;
+}
+
+.row-c img{
+ width: 100px;
+}

@@ -1,0 +1,190 @@
+/* import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+/* VARIABLES */
+:root {
+  --bg-color: #fff;
+  --bg-danger: #f63440;
+  --link-color: #000;
+  --link-size: 1.1rem;
+  --right-side-bg-color: 81, 187, 254;
+  --text-white: #fff;
+  --bg-whited-nice: #fff;
+  --bg-dangered-nice: #e92e3d;
+  --bg-dangered-passtail: #ff6e6a;
+  --bg-greened-nice: #24e07f;
+  --bg-greened-passtail: #a8ff52;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+
+html {
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#bg-body {
+  background: var(--bg-dangered-passtail);
+}
+
+/*===================== Navbar Start ======================================*/
+nav {
+  background: var(--bg-dangered-nice);
+}
+
+nav a.navbar-brand img {
+  height: 50px;
+  background: var(--bg-whited-nice);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.navbarcard button,
+.navbarcard button:hover {
+  outline: none;
+  border: none;
+}
+
+#header form .navbarcard-count {
+  font-size: 12px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link.orderlink {
+  /* color: #24e07f; */
+  position: relative;
+  /* spanOrder */
+}
+
+/* position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger */
+.navbar-light .navbar-nav .nav-item .nav-link.orderlink span.spanOrder {
+  position: absolute;
+  top: 0;
+  left: 100;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e92e3d;
+  background: var(--bs-light);
+  border-radius: 50%;
+  padding: 0 8px;
+}
+
+/*===================== Navbar End ====================================*/
+
+/* ================ Section CartAdd Start ======================= */
+
+.cartadd {
+  border-radius: 7px;
+  padding: 10px;
+  background: var(--bg-color);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+  display: none;
+}
+
+#cartadd .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cartadd {
+  width: 35%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* float: right; */
+  padding: 20px;
+  margin-top: 45px;
+  /* z-index: 1; */
+}
+
+.cartadd {
+  position: sticky;
+  top: 60px;
+  right: 0;
+  z-index: 1;
+}
+
+#cartadd .item-info img {
+  width: 50px;
+  height: 50px;
+}
+
+.show-cart-cartadd {
+  display: block;
+}
+
+.minusBtn,
+.plusBtn {
+  /* font-weight: 900; */
+  font-size: 1.25rem;
+}
+
+.minusBtn {
+  color: #e92e3d;
+}
+
+.plusBtn {
+  color: blue;
+}
+
+/* ================ SEction CartAdd End ======================= */
+
+/* ================ Section Product Start ======================= */
+#product .card {
+  border-radius: 10px;
+  /* padding: 10px; */
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+#product .card .imgBox{
+margin-top: 10px;
+}
+.card img {
+  width: 70%;
+  padding: 10px;
+  background: plum;
+  border-radius: 100%;
+}
+.card-body{
+
+}
+#product .cart-footer {
+  width: 100%;
+}
+/* จำกัดข้อควาให้แสดงแค่ 1 แถว */
+.card-subtitle {
+display: -webkit-box;
+-webkit-line-clamp: 1;
+-webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+/* Mycart html */
+#mycartss {
+  margin-top: 100px;
+}
+
+/* ================ Section Product End ======================= */
+.fa-trash-alt {
+  color: var(--bg-dangered-nice);
+  font-size: 1.25rem;
+}
+
+.fa-trash-alt:hover {
+  transform: scale(1.5);
+}
